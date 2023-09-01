@@ -4,7 +4,6 @@
 #include <vector>
 #include <string>
 
-#include "runpe.h"
 #include "output.h"
 
 using namespace std;
@@ -159,7 +158,7 @@ int RunPE(void* Image, const vector<string>& args/*, char* outputBuffer, size_t 
                 // Move address of entry point to the eax register
                 CTX->Eax = DWORD(pImageBase) + NtHeader->OptionalHeader.AddressOfEntryPoint;
                 SetThreadContext(PI.hThread, LPCONTEXT(CTX)); // Set the context
-                ResumeThread(PI.hThread); //´Start the process/call main()
+                ResumeThread(PI.hThread); //Â´Start the process/call main()
 
                 return 1; // Operation was successful.
             }
