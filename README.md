@@ -17,7 +17,5 @@ int RunPE(void* Image, const vector<string>& args){
 #endif
 ```
 
-[![RunPE](https://img.shields.io/github/downloads/lithellx/RunPE/total?style=for-the-badge&label=RunPE%20Downloads&color=red)]()
-
 ## Authors
 [lithellx](https://github.com/lithellx)
